@@ -3,11 +3,6 @@
         $items = "select * from item_alutsista"; 
         $data_alutsista = $conn->query($items);
 
-        $select_alutsista = "select * from item_alutsista where no_seri = ".$_GET['no_seri'];
-        foreach($conn->query($select_alutsista) as $value){
-        $data_select_alutsista = $value;
-        } ;
-
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +28,7 @@
           <li>
               <a class="navbar-brand getstarted scrollto">
                   <img src="../asset/icons/user.png" alt="user" style="width: 20px; height: 20px;">
-                  <?php echo $_SESSION['nama']; ?>
+
               </a>                      
           </li>
           <li><a class="navbar-link getstarted scrollto" href="login.php">Keluar</a></li>
@@ -45,7 +40,7 @@
         <div class="input-data">
             <h1>EDIT ALUTSISTA</h1><br>
             <label for="">No Seri</label>
-            <input type="text" name="no_seri" value="<?php echo $data_select_alutsista['no_seri'] ?>">
+            <input type="text" name="no_seri" value="<?php echo $data_alutsista['no_seri'] ?>">
     
             <label for="kategori">Kategori </label>
             <select id="kategori" name="kategori" >
@@ -70,11 +65,27 @@
     
             <label for="">Panduan Penggunaan</label>
             <textarea name="panduan" value="<?php echo $data_select_alutsista['panduan_penggunaan'] ?>"></textarea>
-    
-            <label for="">Deskripsi</label>
-            <textarea name="deskripsi" value="<?php echo $data_select_alutsista['deskripsi'] ?>"></textarea>
-    
             
+        </div>
+
+        <div  class="input-data">
+            <h1>INPUT SPESIFIKASI ALUTSISTA</h1><br>
+    
+            <label for="">Berat</label>
+            <input type="text" name="berat"  value="<?php echo $data_select_alutsista['berat'] ?>">
+
+            <label for="">Kecepatan</label>
+            <input type="text" name="kecepatan" value="<?php echo $data_select_alutsista['kecepatan'] ?>">
+
+            <label for="">Bahan Konstruksi</label>
+            <input type="text" name="bahan_konstruksi" value="<?php echo $data_select_alutsista['bahan_konstruksi'] ?>">
+
+            <label for="">Daya Tembak</label>
+            <input type="text" name="daya_tembak" value="<?php echo $data_select_alutsista['daya_tembak'] ?>">
+
+            <label for="">Kapasitas</label>
+            <input type="text" name="kapasitas" value="<?php echo $data_select_alutsista['kapasitas'] ?>">
+                     
         </div>
     
         <div  class="input-data">

@@ -50,11 +50,14 @@
 
         //perintah mySQL untuk update data
         $sql = "UPDATE item_alutsista SET
-                    no_seri = '".$_POST['no_seri']."', kategori = '".$_POST['kategori']."', nama_item = '".$_POST['nama']."',
-                    kondisi = '".$_POST['kondisi']."', panduan_penggunaan = '".$_POST['panduan']."', 
-                    deskripsi = '".$_POST['deskripsi']."', tanggal_masuk = '".$_POST['tanggal']."',
-                    lokasi_terkini = '".$_POST['lokasi']."',riwayat_penggunaan = '".$_POST['riwayat_penggunaan']."',
-                    riwayat_perawatan = '".$_POST['riwayat_perawatan']."', stok = '".$_POST['stok']."',  gambar = '".$foto."' WHERE 
+                    no_seri = '".$_POST['no_seri']."', kategori = '".$_POST['kategori']."',
+                    nama_item = '".$_POST['nama']."', kondisi = '".$_POST['kondisi']."', 
+                    panduan_penggunaan = '".$_POST['panduan']."', berat = '".$_POST['berat']."', 
+                    panduan_penggunaan = '".$_POST['panduan']."', berat = '".$_POST['berat']."', 
+                    tanggal_masuk = '".$_POST['tanggal']."', lokasi_terkini = '".$_POST['lokasi']."',
+                    riwayat_penggunaan = '".$_POST['riwayat_penggunaan']."', 
+                    riwayat_perawatan = '".$_POST['riwayat_perawatan']."', 
+                    stok = '".$_POST['stok']."',  gambar = '".$foto."' WHERE 
                     (id_item = '".$_POST['id_item']."')";
 
         

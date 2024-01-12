@@ -49,16 +49,24 @@
 
     //simpan data berita
     // Simpan data berita
-    $sql = "INSERT INTO item_alutsista (no_seri, kategori, nama_item, kondisi, panduan_penggunaan, deskripsi, 
-            tanggal_masuk, lokasi_terkini, riwayat_penggunaan, riwayat_perawatan, stok, gambar) 
-            VALUES ('".$_POST['no_seri']."', '".$_POST['kategori']."', '".$_POST['nama']."',
-                    '".$_POST['kondisi']."', '".$_POST['panduan']."', '".$_POST['deskripsi']."', '".$_POST['tanggal']."',
-                    '".$_POST['lokasi']."', '".$_POST['riwayat_penggunaan']."', '".$_POST['riwayat_perawatan']."', '".$_POST['stok']."',  '$target_file')";
+    $sql = "INSERT INTO item_alutsista (no_seri, kategori, nama_item, 
+            kondisi, panduan_penggunaan, berat, 
+            kecepatan, bahan_konstruksi, daya_tembak, 
+            kapasitas, tanggal_masuk, lokasi_terkini, 
+            riwayat_penggunaan, riwayat_perawatan, stok, gambar) 
+            VALUES ('".$_POST['no_seri']."', '".$_POST['kategori']."', 
+                    '".$_POST['nama']."', '".$_POST['kondisi']."', 
+                    '".$_POST['panduan']."', '".$_POST['berat']."', 
+                    '".$_POST['kecepatan']."', '".$_POST['bahan_konstruksi']."', 
+                    '".$_POST['daya_tembak']."', '".$_POST['kapasitas']."', 
+                    '".$_POST['tanggal']."', '".$_POST['lokasi']."', 
+                    '".$_POST['riwayat_penggunaan']."', '".$_POST['riwayat_perawatan']."', 
+                    '".$_POST['stok']."',  '$target_file')";
 
 
     if ($conn->query($sql) === TRUE) {
         $conn->close();
-        header("Location: inputdata/inputdata.html");
+        header("Location: inputdata/form_input_data.html");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

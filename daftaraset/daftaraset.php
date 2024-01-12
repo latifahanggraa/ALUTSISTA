@@ -65,7 +65,7 @@ $data_alutsista = $conn->query($items);
 
             <?php
               }
-          ?>
+            ?>
           </div> 
             
         </div>

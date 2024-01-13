@@ -45,11 +45,6 @@
         <img src="../<?php echo $data_select_alutsista['gambar'];?>"  alt="" style="width: 1193px; height:554px;">
     </div>
     <div class="content">
-        <ul id="product">
-            <li><a href="">Informasi Umum</a></li>
-            <li><a href="">Spesifik Alat</a></li>
-            <li><a href="">Riwayat Akutsista</a></li>
-        </ul>
         <ul id="action">
             <li><a href="../editdata/editdata.php">Edit</a></li>
             <li><button id="hapus" onclick="openModal()">Hapus</button></li>
@@ -66,7 +61,9 @@
           </div>          
     </div>
     <div class="data">
+        
         <ul>
+          <h2>Informasi Umum</h2><br>
             <li>
                 <label id="title">Nomor Seri</label>
                 <label id="no_seri" value="<?php echo $data_select_alutsista['no_seri'] ?>"></label>
@@ -85,6 +82,61 @@
             </li>
         </ul>
     </div>
+
+    <div class="data">
+        
+      <ul>
+        <h2>Spesifikasi Alutsista</h2><br>
+          <li>
+              <label id="title">Berat</label>
+              <label id="berat" value="<?php echo $data_select_alutsista['berat'] ?>"></label>
+          </li>
+          <li>
+              <label id="tittle">Kecepatan</label>
+              <label id="kecepatan" value="<?php echo $data_select_alutsista['kecepatan'] ?>">Pesawat Tempur</label>
+          </li>
+          <li>
+              <label id="tittle">Bahan Konstruksi</label>
+              <label id="bahan_konstruksi" value="<?php echo $data_select_alutsista['bahan_konstruksi'] ?>">Baik</label>
+          </li>
+          <li>
+              <label id="tittle">Daya Tembak</label>
+              <label id="daya_tembak" value="<?php echo $data_select_alutsista['daya_tembak'] ?>">Kendaraan tempur</label>
+          </li>
+          <li>
+            <label id="tittle">Kapasitas</label>
+            <label id="kapasitas" value="<?php echo $data_select_alutsista['kapasitas'] ?>">Kendaraan tempur</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="data" style="padding-top: 70px;">
+        
+      <ul>
+        <h2>Riwayat Alutsista</h2><br>
+          <li>
+              <label id="title">Tanggal Masuk</label>
+              <label id="tanggal_masuk" value="<?php echo $data_select_alutsista['tanggal_masuk'] ?>"></label>
+          </li>
+          <li>
+              <label id="tittle">Lokasi Terkini</label>
+              <label id="lokasi_terkini" value="<?php echo $data_select_alutsista['lokasi_terkini'] ?>">Pesawat Tempur</label>
+          </li>
+          <li>
+              <label id="tittle">Riwayat Penggunaan</label>
+              <label id="riwayat_penggunaan" value="<?php echo $data_select_alutsista['riwayat_penggunaan'] ?>">Baik</label>
+          </li>
+          <li>
+              <label id="tittle">Riwayat Perawatan</label>
+              <label id="riwayat_perawatan" value="<?php echo $data_select_alutsista['riwayat_perawatan'] ?>">Kendaraan tempur</label>
+          </li>
+          <li>
+            <label id="tittle">Stok</label>
+            <label id="stok" value="<?php echo $data_select_alutsista['stok'] ?>">Kendaraan tempur</label>
+          </li>
+      </ul>
+    </div>
+
     <div class="footer-content">
         <h3>Panduan Pengguna</h3>
         <p id="panduan" value="<?php echo $data_select_alutsista['panduan_penggunaan'] ?>"></p>

@@ -27,9 +27,9 @@ $data_alutsista = $conn->query($items);
         <input type="text" placeholder="Cari">
       </div>
       <ul class="nav">
-        <li>Beranda</li>
-        <li>Aset</li>
-        <li>Tentang Alutsista</li>
+        <li><a href="index.html">Beranda</li>
+        <li><a href="http://localhost/ALUTSISTA/daftaraset/daftaraset.php">Aset</li>
+        <li><a href="../tentangkami/index.html">Tentang Alutsista</li>
         <li>
             <a class="navbar-brand getstarted scrollto">
                 <img src="../asset/icons/user.png" alt="user" style="width: 20px; height: 20px;">

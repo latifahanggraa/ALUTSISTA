@@ -39,8 +39,8 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 20px;
-    padding: 5px 10px;
-    width: 250px;
+    padding: 5px 5px;
+    width: 500px;
   }
   
   .search-box input[type="text"] {
@@ -61,6 +61,7 @@ body {
     content: '🔍';
     font-size: 20px;
   }
+  
   
   .nav {
     display: flex;
@@ -95,6 +96,7 @@ body {
   
   .sub-header,
   .paragraph {
+    margin-left:100px;
     flex: 3;
     max-width: 55%;
   }
@@ -106,6 +108,7 @@ body {
   }
   
   .content h1 {
+    margin-left: 100px;
     color: #000000;
   }
   
@@ -115,6 +118,9 @@ body {
   }
   
   .paragraph {
+    background-color: antiquewhite;
+    text-align:justify;
+    width: 900px;
     font-size: 16px;
     line-height: 1.6;
   }
@@ -126,11 +132,11 @@ body {
     padding: 20px;
   }
   
-  .text-container {
-    flex: 1;
-    padding-right: 20px;
+  .text-content {
+    display: flex;
+    align-items: center;
   }
-  
+
   .image-container {
     display: flex;
     align-items: center;
@@ -171,13 +177,24 @@ body {
     color: white;
     margin: 5px 0;
   }
-   .footer {
-      background-color: #1E5128;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
+
+  .view-all {
+    display: inline-block; /* Mengubah elemen view-all menjadi inline block */
+    margin-left: 900px;
+  }
   
+  .view-all {
+    text-decoration: none;
+    color: #44602B;
+    font-weight: normal;
+    align-self: flex-end;
+  }
+
+  .footer {
+    background-color: #2B221E;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    bottom: 0;
+    width: auto;
+  }

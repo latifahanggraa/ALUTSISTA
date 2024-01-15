@@ -17,17 +17,16 @@
     <div class="search-box">
       <input type="text" placeholder="Cari">
     </div>
-    <ul class="nav">
-      <li>Beranda</li>
-      <li>Aset</li>
-      <li>Tentang Alutsista</li>
+    <ul class="nav" style="text-decoration: none;">
+      <li><a href="index.html">Beranda</li>
+      <li><a href="http://localhost/ALUTSISTA/daftaraset/daftaraset.php">Aset</li>
+      <li><a href="../tentangkami/index.html">Tentang Alutsista</li>
       <li>
           <a class="navbar-brand getstarted scrollto">
               <img src="../asset/icons/user.png" alt="user" style="width: 20px; height: 20px;">
-              <?php echo $_SESSION['first_name']; ?>
           </a>                      
       </li>
-      <li><a class="navbar-link getstarted scrollto" href="logout.php">Keluar</a></li>
+      <li><a class="navbar-link getstarted scrollto" href="../login/login.html">Keluar</a></li>
   </ul>    
   </nav>
 

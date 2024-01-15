@@ -22,7 +22,7 @@
         </div>
     
         <ul class="nav">
-            <li><a href="index.html">Beranda</li>
+            <li><a href="../home/index.html">Beranda</li>
             <li><a href="http://localhost/ALUTSISTA/daftaraset/daftaraset.php">Aset</li>
             <li><a href="../tentangkami/index.html">Tentang Alutsista</li>
           <li>

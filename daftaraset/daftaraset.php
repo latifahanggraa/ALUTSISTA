@@ -49,7 +49,7 @@ $data_alutsista = $conn->query($items);
             ?>
             
             <div class="col-sm-4">   
-              <a href="../detail/detail.php" style="text-decoration: none;">
+              <a href="http://localhost/ALUTSISTA/detail/detail.html" style="text-decoration: none;">
               <div class="card p-3">
                   <div class="image" >
                     <img src="../<?php echo $item['gambar']; ?>" alt="Item Image" style="width:375px;  height:275px;">
